@@ -7,6 +7,11 @@
 Live: **https://jeonse-guard-kr.vercel.app** (no login; one-click sample: https://jeonse-guard-kr.vercel.app/?sample=1)
 Built for LexHack 2026, tracks: Access to Justice & Civic Tech, and AI Safety, Ethics & Governance.
 
+<p>
+  <img src="docs/report.png" width="49%" alt="Report for the sample lease: 85,000,000 won could be lost if the home is auctioned, shown as a who-gets-paid-first bar with an auction-price slider">
+  <img src="docs/seal.png" width="49%" alt="An opened seal for Housing Lease Protection Act Article 3-2: the official Korean text and the official English translation, with the quoted passage highlighted in both">
+</p>
+
 ---
 
 ## The problem
@@ -135,7 +140,7 @@ npm run build:vercel && vercel deploy --prebuilt --prod
 
 ## Limits
 
-Jeonse Guard is decision support, not legal advice. It checks what the tenant types in; it does not read registry PDFs yet. The auction scenario assumes the tenant holds move-in registration and a fixed date before later creditors, and it ignores auction costs and tax claims. Coverage is six fact checks and seven clause types. Everything else is silence, by design. Free help: Jeonse Damage Support Centers, 1533-8119.
+Jeonse Guard is decision support, not legal advice. It checks what the tenant types in; it does not read registry PDFs yet. The auction scenario assumes the tenant holds move-in registration and a fixed date before later creditors, and it ignores auction costs and tax claims. Coverage is six fact checks and seven clause types. Everything else is silence, by design. The live law check calls the Open API with `OC=test` unless `LAW_OC` is set; if law.go.kr does not answer, the page says it is using the snapshot of 2026-09-24 and never claims a live match (AC-17). Free help: Jeonse Damage Support Centers, 1533-8119.
 
 ## What's next
 
