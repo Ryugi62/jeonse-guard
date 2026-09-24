@@ -1,0 +1,107 @@
+{
+ "date": "2026-09-24T01:55:44.660Z",
+ "models": [
+  "gemini-3.5-flash-lite",
+  "gemini-3-flash-preview",
+  "gemini-2.5-flash"
+ ],
+ "dev": {
+  "rule": {
+   "n": 31,
+   "tp": 20,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "accuracy": 1
+  },
+  "ai": {
+   "n": 31,
+   "tp": 20,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "accuracy": 1
+  },
+  "combined": {
+   "n": 31,
+   "tp": 20,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "accuracy": 1
+  },
+  "misses": []
+ },
+ "paraphrase": {
+  "rule": {
+   "n": 24,
+   "tp": 16,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "accuracy": 1
+  },
+  "ai": {
+   "n": 24,
+   "tp": 16,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "accuracy": 1
+  },
+  "combined": {
+   "n": 24,
+   "tp": 16,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1,
+   "recall": 1,
+   "accuracy": 1
+  },
+  "misses": []
+ },
+ "blind": {
+  "rule": {
+   "n": 60,
+   "tp": 21,
+   "fp": 0,
+   "fn": 21,
+   "precision": 1,
+   "recall": 0.5,
+   "accuracy": 0.65
+  },
+  "ai": {
+   "n": 60,
+   "tp": 42,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.977,
+   "recall": 1,
+   "accuracy": 0.983
+  },
+  "combined": {
+   "n": 60,
+   "tp": 42,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.977,
+   "recall": 1,
+   "accuracy": 0.983
+  },
+  "misses": [
+   {
+    "text": "임차인의 사정으로 계약 기간 만료 전 퇴거하는 경우, 새로운 임차인을 구하기 위한 중개보수는 임차인이 부담하며 차기 임차인이 입주할 때까지 월세와 관리비를 납부한다.",
+    "label": null,
+    "rule": null,
+    "ai": "deposit-after-new-tenant",
+    "combined": "deposit-after-new-tenant"
+   }
+  ]
+ },
+ "aiOutOfTaxonomy": 0
+}
